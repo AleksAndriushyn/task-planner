@@ -30,14 +30,14 @@ const CreateTaskModal = () => {
 		},
 	});
 
-	const form = useForm<CreateFormFields>({
+	const form = useForm({
 		defaultValues: {
 			title: "",
 			description: "",
 			priority: "MEDIUM",
 			status: "TODO",
 		},
-		onSubmit: async ({ value }) => {
+		onSubmit: async ({ value }: { value: CreateFormFields }) => {
 			mutate(value);
 		},
 	});
