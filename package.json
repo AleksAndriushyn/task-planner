@@ -27,6 +27,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@tanstack/react-query-devtools": "^5.90.2",
+    "globals": "^16.4.0",
     "tailwindcss": "^4",
     "typescript": "^5.9.3"
   }
